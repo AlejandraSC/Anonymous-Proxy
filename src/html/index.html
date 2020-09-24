@@ -10,103 +10,16 @@
 
   <body>
     <!--HEADER-->
-    <header class="header">
-      <nav>
-        <a href="https://adalab.es/" target="_blank" title="Anonymous proxy will help you">
-          <img class="hamburguer" src="./assets/images/ico-menu.svg" alt="Anonymous proxy will help you" />
-        </a>
-      </nav>
-    </header>
-
+    <include src="./partials/header.html"></include>
     <!--MAIN-->
     <main class="main">
       <!--Hero -->
-      <section class="hero">
-        <h1 class="hero-title">Anonymous proxy</h1>
-        <h2 class="hero-subtitle">In hac habitasse platea dictumst.</h2>
-        <button class="ico-scroll">
-          <img src="" alt="" />
-          <a class="ico-scroll" href="./assets/images/ico-scroll-down.svg"></a>
-        </button>
-      </section>
-
+      <include src="./partials/hero.html"></include>
       <!--Looking-->
-      <section class="Looking">
-        Looking through a window
-        <p>Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-        <button class="Go">Go</button>
-      </section>
+      <include src="./partials/looking.html"></include>
       <!--Reasons-->
-      <section class="reasons-purchase">
-        <h2 class="reasons-title">3 reasons to purchase</h2>
-        <div class="reasons">
-          <article class="reasons">
-            <div class="first-reason">
-              <h3 class="reason-title">Ut sed metus</h3>
-              <p class="reason-description">Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </article>
-          <article class="reasons">
-            <div class="second-reason">
-              <h3 class="reason-title">Curabitur ac erat</h3>
-              <p class="reason-description">Maurius mattis urna quis lorem molestie</p>
-            </div>
-          </article>
-          <article class="reasons">
-            <div class="third-reason">
-              <h3 class="reason-title">Morbi dictum</h3>
-              <p class="reason-description">Aliquam in dolor et dolor tincidunt</p>
-            </div>
-            <button class="more-reasons-button">More reasons</button>
-          </article>
-        </div>
-      </section>
-    </main>
-
+      <include src="./partials/reasons.html"></include>
     <!--FOOTER-->
-    <footer class="footer">
-      <section class="interesting-container">
-        <nav class="interesting">
-          <ul>
-            <li>
-              <a href="">Articles</a>
-            </li>
-            <li>
-              <a href="">Books</a>
-            </li>
-            <li>
-              <a href="">Events</a>
-            </li>
-            <li>
-              <a href="">Reasons</a>
-            </li>
-            <li>
-              <a href="">Tips</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-
-      <section class="social-media-container">
-        <nav class="social-media">
-          <ul>
-            <li>
-              <a href="">Twitter</a>
-            </li>
-            <li>
-              <a href="">Instagram</a>
-            </li>
-            <li>
-              <a href="">Mastodon social</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-
-      <small class="copyright-container">
-        <span class="footer-copyright"> &copy; 2020 </span>
-        <span class="footer-love">we &#10084;&#65039; components</span>
-      </small>
-    </footer>
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
