@@ -1,1 +1,10 @@
+// core
+@import "./core/variables";
+@import "./core/reset";
 
+// Layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/looking";
+@import "./layout/reasons";
+@import "./layout/footer";
