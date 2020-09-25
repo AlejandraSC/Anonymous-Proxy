@@ -42,6 +42,8 @@
 .looking-description {
   height: 120px;
   gap: 30px;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
 }
 
 .go-button {
@@ -51,4 +53,8 @@
   width: 76px;
   border-radius: 22.5px;
   border: solid 2px $button-details;
+
+  &:hover {
+    background-color: orange;
+  }
 }

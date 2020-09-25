@@ -1,17 +1,15 @@
 .footer {
   box-sizing: border-box;
-  border-top: solid 1px $footer__background--color;
-  width: 100%;
   height: 465px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-around;
   padding: 10%;
   align-items: center;
   background-color: $footer__background--color;
   color: $base-color;
   line-height: 30px;
+  padding-top: 0;
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -34,9 +32,6 @@
     font-size: 14px;
     margin: 0px;
     left: 124px;
-    right: 123px;
-    top: 60px;
-    bottom: 255px;
     line-height: 30px;
     text-transform: uppercase;
 
@@ -91,7 +86,6 @@
       text-decoration: none;
     }
   }
-
 }
 
 .footer-copyright {
@@ -154,5 +148,15 @@
 }
 
 .ico-arrow {
- 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: none;
+
+  &:hover {
+    background-color: $insomnia__tips--color;
+  }
 }

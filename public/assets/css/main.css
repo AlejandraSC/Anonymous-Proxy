@@ -12,30 +12,62 @@
 .hamburguer-button {
   width: 44px;
   height: 44px;
-  background-color: #0271bc; }
+  background-color: #0271bc;
+  border: none; }
 
-.hero {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.hero-text {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
   text-align: center;
   align-items: center;
-  color: #ffffff; }
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  color: #ffffff;
+  padding: 53px; }
 
 .hero-title {
-  width: 320px;
+  width: 290px;
+  height: 284px;
   font-size: 42px;
   text-transform: uppercase;
-  font-family: "RobotoSlab", sans-serif; }
+  font-family: "RobotoSlab", sans-serif;
+  line-height: 55px;
+  padding: 10px; }
+  @media all and (min-width: 768px) {
+    .hero-title {
+      width: 690px;
+      height: 212px;
+      font-size: 80px;
+      line-height: 106px; } }
+  @media all and (min-width: 1280px) {
+    .hero-title {
+      width: 730px;
+      height: 264px;
+      font-size: 100px;
+      line-height: 132px; } }
 
 .hero-subtitle {
-  font-family: "Roboto", sans-serif;
+  align-content: flex-start;
   font-size: 16px;
-  width: 290px;
-  height: 21px; }
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 45px; }
+  @media all and (min-width: 768px) {
+    .hero-subtitle {
+      width: 360px;
+      height: 32px;
+      font-size: 24px; } }
+  @media all and (min-width: 1280px) {
+    .hero-subtitle {
+      width: 730px;
+      height: 32px;
+      font-size: 24px; } }
 
 .ico-scroll {
   display: flex;
@@ -44,7 +76,9 @@
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
-  bottom: 53px; }
+  border: none; }
+  .ico-scroll:hover {
+    background-color: #8ccbea; }
 
 .looking-container {
   background-color: #ffffff;
@@ -83,7 +117,9 @@
 
 .looking-description {
   height: 120px;
-  gap: 30px; }
+  gap: 30px;
+  grid-template-columns: 1;
+  grid-template-rows: 4; }
 
 .go-button {
   background-color: #ffffff;
@@ -92,6 +128,8 @@
   width: 76px;
   border-radius: 22.5px;
   border: solid 2px #f26002; }
+  .go-button:hover {
+    background-color: orange; }
 
 .reasons-purchase {
   background-color: #eff9ff;
@@ -146,21 +184,21 @@
   border-radius: 22.5px;
   line-height: 2.25;
   border: none; }
+  .reasons-button:hover {
+    background-color: orange; }
 
 .footer {
   box-sizing: border-box;
-  border-top: solid 1px #304268;
-  width: 100%;
   height: 465px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-around;
   padding: 10%;
   align-items: center;
   background-color: #304268;
   color: #ffffff;
-  line-height: 30px; }
+  line-height: 30px;
+  padding-top: 0; }
   @media all and (min-width: 768px) {
     .footer {
       display: flex;
@@ -180,9 +218,6 @@
     font-size: 14px;
     margin: 0px;
     left: 124px;
-    right: 123px;
-    top: 60px;
-    bottom: 255px;
     line-height: 30px;
     text-transform: uppercase; }
     @media all and (min-width: 768px) {
@@ -278,5 +313,16 @@
 
 .heart {
   color: #f26002; }
+
+.ico-arrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: none; }
+  .ico-arrow:hover {
+    background-color: #8ccbea; }
 
 /*# sourceMappingURL=main.css.map */

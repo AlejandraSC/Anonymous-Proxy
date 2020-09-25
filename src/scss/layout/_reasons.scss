@@ -43,9 +43,10 @@
   width: 180px;
   height: 63px;
 }
+
 .reason-title {
-font-size: 18px;
-font-family: $title-font;
+  font-size: 18px;
+  font-family: $title-font;
 }
 
 .reasons-button {
@@ -57,4 +58,8 @@ font-family: $title-font;
   border-radius: 22.5px;
   line-height: 2.25;
   border: none;
+
+  &:hover {
+    background-color: orange;
+  }
 }

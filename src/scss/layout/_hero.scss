@@ -1,27 +1,64 @@
-.hero {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+.hero-text {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
   text-align: center;
   align-items: center;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
   color: $base-color;
+  padding: 53px;
 }
 
 .hero-title {
-  width: 320px;
+  width: 290px;
+  height: 284px;
   font-size: 42px;
   text-transform: uppercase;
   font-family: $title-font;
+  line-height: 55px;
+  padding: 10px;
+
+  @media all and (min-width: 768px) {
+    width: 690px;
+    height: 212px;
+    font-size: 80px;
+    line-height: 106px;
+
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 730px;
+    height: 264px;
+    font-size: 100px;
+    line-height: 132px;
+  }
 }
 
 .hero-subtitle {
-  font-family: $text-font;
+  align-content: flex-start;
   font-size: 16px;
-  width: 290px;
-  height: 21px;
+  font-family: $text-font;
+  padding-bottom: 45px;
+
+  @media all and (min-width: 768px) {
+    width: 360px;
+    height: 32px;
+    font-size: 24px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 730px;
+    height: 32px;
+    font-size: 24px;
+  }
 }
 
 .ico-scroll {
@@ -31,5 +68,9 @@
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
-  bottom: 53px;
+  border: none;
+
+  &:hover {
+    background-color: $insomnia__tips--color;
+  }
 }
