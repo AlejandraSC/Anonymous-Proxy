@@ -1,3 +1,17 @@
 .looking {
   background-color: $base-color;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 376px;
+  width: 320;
+}
+
+.go {
+  background-color: $base-color;
+  color: $button-details;
+  
 }

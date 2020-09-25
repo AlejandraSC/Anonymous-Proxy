@@ -89,6 +89,7 @@
 
     a {
       color: $base-color;
+      text-decoration: none;
     }
   }
 
@@ -101,6 +102,7 @@
   text-align: center;
   justify-content: center;
   display: flex;
+  height: 30px;
   flex-wrap: wrap;
   margin: 0;
 
@@ -128,6 +130,7 @@
   color: $base-color;
   font-family: $text-font;
   font-size: 14px;
+  height: 30px;
   text-align: center;
   margin: 0;
 

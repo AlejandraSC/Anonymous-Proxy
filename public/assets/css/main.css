@@ -1,8 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  list-style: none; }
+  padding: 0px; }
 
 .header {
   display: flex;
@@ -46,10 +45,68 @@
   bottom: 53px; }
 
 .looking {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 376px;
+  width: 320; }
+
+.go {
+  background-color: #ffffff;
+  color: #f26002; }
+
+.reasons-purchase {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  background-color: #eff9ff;
+  height: 624px; }
 
 .reasons {
-  background-color: #eff9ff; }
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 6;
+  gap: 45px;
+  padding-top: 45px;
+  padding-bottom: 150px;
+  justify-content: center; }
+
+.reasons-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  height: 30px;
+  font-family: "RobotoSlab", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  line-height: 1.25; }
+  @media all and (min-width: 768px) {
+    .reasons-title {
+      width: 100%; } }
+  @media all and (min-width: 1200px) {
+    .reasons-title {
+      width: 50.1%; } }
+
+.reason-description {
+  font-family: "Roboto", sans-serif;
+  width: 180px;
+  height: 63px; }
+
+.reasons-button {
+  background-color: #f26002;
+  color: #ffffff;
+  font-size: 20px;
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  line-height: 2.25; }
 
 .footer {
   box-sizing: border-box;
@@ -129,7 +186,8 @@
     list-style: none;
     text-transform: uppercase; }
     .footer .li-bullets a {
-      color: #ffffff; }
+      color: #ffffff;
+      text-decoration: none; }
 
 .footer-copyright {
   font-weight: normal;
@@ -138,6 +196,7 @@
   text-align: center;
   justify-content: center;
   display: flex;
+  height: 30px;
   flex-wrap: wrap;
   margin: 0; }
   @media all and (min-width: 768px) {
@@ -162,6 +221,7 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  height: 30px;
   text-align: center;
   margin: 0; }
   @media all and (min-width: 768px) {
