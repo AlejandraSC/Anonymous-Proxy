@@ -1,17 +1,54 @@
-.looking {
+.looking-container {
   background-color: $base-color;
   display: flex;
-  position: relative;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  position: static;
+  text-align: left;
   height: 376px;
-  width: 320;
+  padding-left: 15px;
+  padding-bottom: 45px;
 }
 
-.go {
+.insomnia-tips {
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 60px;
+
+  a {
+    color: $base-color;
+    font-family: $text-font;
+    color: $insomnia__tips--color;
+    text-decoration: none;
+  }
+}
+
+.looking {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  gap: 15px;
+  line-height: 30px;
+}
+
+.looking-title {
+  height: 60px;
+  width: 290px;
+  font-size: 24px;
+  font-family: $title-font;
+  text-transform: capitalize;
+}
+
+.looking-description {
+  height: 120px;
+  gap: 30px;
+}
+
+.go-button {
   background-color: $base-color;
   color: $button-details;
-  
+  height: 45px;
+  width: 76px;
+  border-radius: 22.5px;
+  border: solid 2px $button-details;
 }

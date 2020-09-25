@@ -1,26 +1,25 @@
 .reasons-purchase {
+  background-color: $background__reasons--color;
   display: flex;
   flex-direction: column;
+  position: static;
   text-align: center;
-  position: relative;
-  background-color: $background__reasons--color;
   height: 624px;
+  line-height: 30px;
 }
 
 .reasons {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 6;
+  grid-template-rows: 3;
   gap: 45px;
   padding-top: 45px;
   padding-bottom: 150px;
-  ;
   justify-content: center;
 }
 
 .reasons-title {
   font-size: 24px;
-  text-transform: uppercase;
   color: $basic-color;
   height: 30px;
   font-family: $title-font;
@@ -28,7 +27,7 @@
   justify-content: center;
   margin-top: 30px;
   margin-left: 15px;
-  line-height: 1.25;
+  text-transform: capitalize;
 
   @media all and (min-width: 768px) {
     width: 100%;
@@ -43,7 +42,10 @@
   font-family: $text-font;
   width: 180px;
   height: 63px;
-
+}
+.reason-title {
+font-size: 18px;
+font-family: $title-font;
 }
 
 .reasons-button {
@@ -54,4 +56,5 @@
   height: 45px;
   border-radius: 22.5px;
   line-height: 2.25;
+  border: none;
 }
