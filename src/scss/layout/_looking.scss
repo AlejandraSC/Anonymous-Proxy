@@ -7,6 +7,15 @@
   height: 376px;
   padding-left: 15px;
   padding-bottom: 45px;
+
+  @media all and (min-width: 768px) {
+    padding-left: 39px;
+
+  }
+
+  @media all and (min-width: 1280px) {
+    padding-left: 275px;
+  }
 }
 
 .insomnia-tips {
@@ -20,6 +29,19 @@
     font-family: $text-font;
     color: $insomnia__tips--color;
     text-decoration: none;
+  }
+
+  @media all and (min-width: 768px) {
+    width: 216px;
+    height: 14px;
+    font-size: 16px;
+
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 360px;
+    height: 30px;
+    font-size: 16px;
   }
 }
 
@@ -37,13 +59,30 @@
   font-size: 24px;
   font-family: $title-font;
   text-transform: capitalize;
+
+  @media all and (min-width: 768px) {
+    width: 730px;
+    height: 45px;
+    font-size: 32px;
+  }
 }
 
 .looking-description {
   height: 120px;
-  gap: 30px;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
+  weight: 290px;
+  font-size: 18px;
+
+  @media all and (min-width: 768px) {
+    width: 690px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 730px;
+    height: 60px;
+    font-size: 20px;
+  }
 }
 
 .go-button {
@@ -56,5 +95,11 @@
 
   &:hover {
     background-color: orange;
+  }
+
+  @media all and (min-width: 768px) {
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
   }
 }

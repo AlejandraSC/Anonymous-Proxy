@@ -14,6 +14,8 @@
   height: 44px;
   background-color: #0271bc;
   border: none; }
+  .hamburguer-button:hover {
+    background-color: #FADBD8; }
 
 * {
   box-sizing: border-box;
@@ -78,7 +80,9 @@
   border-radius: 22.5px;
   border: none; }
   .ico-scroll:hover {
-    background-color: #8ccbea; }
+    transition: transform ease 7s, background-color ease 1s;
+    background-color: #8ccbea;
+    transform: translate(0vw, 50vh); }
 
 .looking-container {
   background-color: #ffffff;
@@ -89,6 +93,12 @@
   height: 376px;
   padding-left: 15px;
   padding-bottom: 45px; }
+  @media all and (min-width: 768px) {
+    .looking-container {
+      padding-left: 39px; } }
+  @media all and (min-width: 1280px) {
+    .looking-container {
+      padding-left: 275px; } }
 
 .insomnia-tips {
   width: 90px;
@@ -100,6 +110,16 @@
     font-family: "Roboto", sans-serif;
     color: #8ccbea;
     text-decoration: none; }
+  @media all and (min-width: 768px) {
+    .insomnia-tips {
+      width: 216px;
+      height: 14px;
+      font-size: 16px; } }
+  @media all and (min-width: 1280px) {
+    .insomnia-tips {
+      width: 360px;
+      height: 30px;
+      font-size: 16px; } }
 
 .looking {
   display: grid;
@@ -114,12 +134,26 @@
   font-size: 24px;
   font-family: "RobotoSlab", sans-serif;
   text-transform: capitalize; }
+  @media all and (min-width: 768px) {
+    .looking-title {
+      width: 730px;
+      height: 45px;
+      font-size: 32px; } }
 
 .looking-description {
   height: 120px;
-  gap: 30px;
-  grid-template-columns: 1;
-  grid-template-rows: 4; }
+  weight: 290px;
+  font-size: 18px; }
+  @media all and (min-width: 768px) {
+    .looking-description {
+      width: 690px;
+      height: 60px;
+      font-size: 20px; } }
+  @media all and (min-width: 1280px) {
+    .looking-description {
+      width: 730px;
+      height: 60px;
+      font-size: 20px; } }
 
 .go-button {
   background-color: #ffffff;
@@ -130,15 +164,45 @@
   border: solid 2px #f26002; }
   .go-button:hover {
     background-color: orange; }
+  @media all and (min-width: 768px) {
+    .go-button {
+      width: 160px;
+      height: 45px;
+      font-size: 20px; } }
 
 .reasons-purchase {
   background-color: #eff9ff;
   display: flex;
   flex-direction: column;
   position: static;
-  text-align: center;
+  align-items: center;
   height: 624px;
   line-height: 30px; }
+  @media all and (min-width: 768px) {
+    .reasons-purchase {
+      height: 397px; } }
+  @media all and (min-width: 1280px) {
+    .reasons-purchase {
+      height: 427px; } }
+
+.reasons-title {
+  font-size: 24px;
+  color: #000000;
+  height: 30px;
+  font-family: "RobotoSlab", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  text-transform: capitalize; }
+  @media all and (min-width: 768px) {
+    .reasons-title {
+      font-size: 26px; } }
+  @media all and (min-width: 1280px) {
+    .reasons-title {
+      font-size: 32px; } }
 
 .reasons {
   display: grid;
@@ -148,32 +212,41 @@
   padding-top: 45px;
   padding-bottom: 150px;
   justify-content: center; }
-
-.reasons-title {
-  font-size: 24px;
-  color: #000000;
-  height: 30px;
-  font-family: "RobotoSlab", sans-serif;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-left: 15px;
-  text-transform: capitalize; }
   @media all and (min-width: 768px) {
-    .reasons-title {
-      width: 100%; } }
-  @media all and (min-width: 1200px) {
-    .reasons-title {
-      width: 50.1%; } }
-
-.reason-description {
-  font-family: "Roboto", sans-serif;
-  width: 180px;
-  height: 63px; }
+    .reasons {
+      grid-auto-flow: column;
+      grid-template-columns: 3;
+      grid-template-rows: 1; } }
 
 .reason-title {
   font-size: 18px;
   font-family: "RobotoSlab", sans-serif; }
+  @media all and (min-width: 768px) {
+    .reason-title {
+      font-size: 24px;
+      width: 210px;
+      height: 30px; } }
+  @media all and (min-width: 1280px) {
+    .reason-title {
+      width: 350px;
+      height: 30px; } }
+
+.reason-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  width: 180px;
+  height: 63px; }
+  @media all and (min-width: 768px) {
+    .reason-description {
+      font-size: 20px;
+      width: 212, 3px;
+      height: 68px;
+      padding-left: 81,2px; } }
+  @media all and (min-width: 1280px) {
+    .reason-description {
+      font-size: 20px;
+      width: 353, 8px;
+      height: 68px; } }
 
 .reasons-button {
   background-color: #f26002;
@@ -185,7 +258,15 @@
   line-height: 2.25;
   border: none; }
   .reasons-button:hover {
-    background-color: orange; }
+    background-color: #304268;
+    color: #E59866; }
+  @media all and (min-width: 768px) {
+    .reasons-button {
+      width: 210px;
+      height: 45px; } }
+  @media all and (min-width: 1280px) {
+    .reasons-button {
+      width: 255px; } }
 
 .footer {
   box-sizing: border-box;
@@ -323,6 +404,8 @@
   border-radius: 22.5px;
   border: none; }
   .ico-arrow:hover {
-    background-color: #8ccbea; }
+    transition: transform ease 7s, background-color ease 1s;
+    background-color: #8ccbea;
+    transform: translate(0vw, -50vh); }
 
 /*# sourceMappingURL=main.css.map */

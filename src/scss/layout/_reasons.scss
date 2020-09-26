@@ -3,9 +3,40 @@
   display: flex;
   flex-direction: column;
   position: static;
-  text-align: center;
+  align-items: center;
   height: 624px;
   line-height: 30px;
+
+  @media all and (min-width: 768px) {
+    height: 397px;
+  }
+
+  @media all and (min-width: 1280px) {
+    height: 427px;
+  }
+
+}
+
+.reasons-title {
+  font-size: 24px;
+  color: $basic-color;
+  height: 30px;
+  font-family: $title-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  text-transform: capitalize;
+
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 32px;
+  }
 }
 
 .reasons {
@@ -16,37 +47,52 @@
   padding-top: 45px;
   padding-bottom: 150px;
   justify-content: center;
-}
-
-.reasons-title {
-  font-size: 24px;
-  color: $basic-color;
-  height: 30px;
-  font-family: $title-font;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-left: 15px;
-  text-transform: capitalize;
 
   @media all and (min-width: 768px) {
-    width: 100%;
+    grid-auto-flow: column;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
   }
 
-  @media all and (min-width: 1200px) {
-    width: 50.1%;
-  }
-}
+  @media all and (min-width: 1280px) {}
 
-.reason-description {
-  font-family: $text-font;
-  width: 180px;
-  height: 63px;
 }
 
 .reason-title {
   font-size: 18px;
   font-family: $title-font;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    width: 210px;
+    height: 30px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 350px;
+    height: 30px;
+  }
+}
+
+
+.reason-description {
+  font-family: $text-font;
+  font-size: 18px;
+  width: 180px;
+  height: 63px;
+
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+    width: 212, 3px;
+    height: 68px;
+    padding-left: 81,2px;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: 20px;
+    width: 353, 8px;
+    height: 68px;
+  }
 }
 
 .reasons-button {
@@ -60,6 +106,16 @@
   border: none;
 
   &:hover {
-    background-color: orange;
+    background-color: $footer__background--color;
+    color: #E59866;
+  }
+
+  @media all and (min-width: 768px) {
+    width: 210px;
+    height: 45px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 255px;
   }
 }

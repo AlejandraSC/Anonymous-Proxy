@@ -147,6 +147,7 @@
   color: $button-details
 }
 
+
 .ico-arrow {
   display: flex;
   justify-content: space-around;
@@ -157,6 +158,8 @@
   border: none;
 
   &:hover {
+    transition: transform ease 7s, background-color ease 1s;
     background-color: $insomnia__tips--color;
+    transform: translate(0vw, -50vh);
   }
 }
