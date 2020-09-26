@@ -2,9 +2,8 @@
   background-color: $background__reasons--color;
   display: flex;
   flex-direction: column;
-  position: static;
   align-items: center;
-  height: 624px;
+  text-align: center;
   line-height: 30px;
 
   @media all and (min-width: 768px) {
@@ -42,15 +41,15 @@
 .reasons {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 3;
+  grid-template-rows: 2;
   gap: 45px;
   padding-top: 45px;
-  padding-bottom: 150px;
+  padding-bottom: 45px;
   justify-content: center;
 
   @media all and (min-width: 768px) {
     grid-auto-flow: column;
-    grid-template-columns: 3;
+    grid-template-columns: 2;
     grid-template-rows: 1;
   }
 
@@ -61,6 +60,8 @@
 .reason-title {
   font-size: 18px;
   font-family: $title-font;
+  width: 184px;
+  height: 30px;
 
   @media all and (min-width: 768px) {
     font-size: 24px;
@@ -85,14 +86,24 @@
     font-size: 20px;
     width: 212, 3px;
     height: 68px;
-    padding-left: 81,2px;
+    padding-left: 35.7px;
   }
 
   @media all and (min-width: 1280px) {
     font-size: 20px;
     width: 353, 8px;
     height: 68px;
+
   }
+}
+
+.reasons-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+
 }
 
 .reasons-button {

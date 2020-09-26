@@ -14,15 +14,10 @@
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
-    position: relative;
-    height: 170px;
-    align-items: initial;
+    height: 240px;
   }
 
-  @media all and (min-width: 1200px) {
-    width: 100%;
-    height: 161px;
-  }
+  @media all and (min-width: 1200px) {}
 
   .interesting {
     text-align: center;
@@ -36,11 +31,14 @@
     text-transform: uppercase;
 
     @media all and (min-width: 768px) {
-      text-align: right;
+      text-align: left;
       line-height: 30px;
-      position: absolute;
+      flex-direction: row-reverse;
+      position: relative;
       right: 50px;
       top: 24px;
+      height: 150px;
+      width: 210px;
     }
 
     @media all and (min-width: 1200) {
@@ -54,7 +52,6 @@
     text-align: center;
     color: $base-color;
     font-family: $text-font;
-    font-weight: 500;
     font-size: 14px;
     margin: 0px;
     left: 124px;
@@ -64,17 +61,32 @@
     text-transform: uppercase;
 
     @media all and (min-width: 768px) {
-      text-align: right;
+      text-align: left;
       position: relative;
-      right: 50px;
       top: 24px;
     }
 
     @media all and (min-width: 1200) {
-      position: absolute;
       bottom: 15px;
       right: 138px;
     }
+  }
+
+  .links {
+    padding-top: 45px;
+    ;
+    flex-direction: row;
+
+
+    @media all and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media all and (min-width: 1200) {
+      display: flex;
+      position: relative;
+    }
+
   }
 
   .li-bullets {
@@ -101,7 +113,6 @@
 
   @media all and (min-width: 768px) {
     text-align: left;
-    position: relative;
     left: 39px;
     bottom: 165px;
     top: 45px;
@@ -127,9 +138,8 @@
   margin: 0;
 
   @media all and (min-width: 768px) {
-    text-align: left;
-    position: relative;
-    left: 39px;
+    text-align: right;
+    padding-left: 65px;
     top: 68px;
     bottom: 142px;
   }
@@ -161,5 +171,39 @@
     transition: transform ease 7s, background-color ease 1s;
     background-color: $insomnia__tips--color;
     transform: translate(0vw, -50vh);
+  }
+
+  @media all and (min-width: 768px) {
+    text-align: left;
+    position: relative;
+    left: 39px;
+    top: 68px;
+    bottom: 142px;
+  }
+
+  @media all and (min-width: 1200) {
+    text-align: left;
+    position: absolute;
+    top: 75px;
+    bottom: 135px;
+    left: 370px;
+  }
+}
+
+.footer_button-container {
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  padding-bottom: 410px;
+
+
+  @media all and (min-width: 768px) {
+    padding-bottom: 290px;
+    text-align: center;
+  }
+
+  @media all and (min-width: 1200) {
+    display: flex;
+    padding-bottom: 500px;
   }
 }

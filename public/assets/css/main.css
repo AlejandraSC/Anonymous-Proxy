@@ -91,20 +91,21 @@
   position: static;
   text-align: left;
   height: 376px;
-  padding-left: 15px;
-  padding-bottom: 45px; }
+  padding-left: 15px; }
   @media all and (min-width: 768px) {
     .looking-container {
-      padding-left: 39px; } }
+      padding-left: 39px;
+      height: 330px; } }
   @media all and (min-width: 1280px) {
     .looking-container {
-      padding-left: 275px; } }
+      padding-left: 275px;
+      height: 360px; } }
 
 .insomnia-tips {
   width: 90px;
   height: 30px;
   font-size: 14px;
-  margin-top: 60px; }
+  margin-top: 30px; }
   .insomnia-tips a {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -114,12 +115,14 @@
     .insomnia-tips {
       width: 216px;
       height: 14px;
-      font-size: 16px; } }
+      font-size: 16px;
+      margin-top: 30px; } }
   @media all and (min-width: 1280px) {
     .insomnia-tips {
       width: 360px;
       height: 30px;
-      font-size: 16px; } }
+      font-size: 16px;
+      margin-top: 60px; } }
 
 .looking {
   display: grid;
@@ -136,13 +139,18 @@
   text-transform: capitalize; }
   @media all and (min-width: 768px) {
     .looking-title {
+      width: 690px;
+      height: 45px;
+      font-size: 26px; } }
+  @media all and (min-width: 1280px) {
+    .looking-title {
       width: 730px;
       height: 45px;
       font-size: 32px; } }
 
 .looking-description {
   height: 120px;
-  weight: 290px;
+  width: 290px;
   font-size: 18px; }
   @media all and (min-width: 768px) {
     .looking-description {
@@ -174,9 +182,8 @@
   background-color: #eff9ff;
   display: flex;
   flex-direction: column;
-  position: static;
   align-items: center;
-  height: 624px;
+  text-align: center;
   line-height: 30px; }
   @media all and (min-width: 768px) {
     .reasons-purchase {
@@ -207,20 +214,22 @@
 .reasons {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 3;
+  grid-template-rows: 2;
   gap: 45px;
   padding-top: 45px;
-  padding-bottom: 150px;
+  padding-bottom: 45px;
   justify-content: center; }
   @media all and (min-width: 768px) {
     .reasons {
       grid-auto-flow: column;
-      grid-template-columns: 3;
+      grid-template-columns: 2;
       grid-template-rows: 1; } }
 
 .reason-title {
   font-size: 18px;
-  font-family: "RobotoSlab", sans-serif; }
+  font-family: "RobotoSlab", sans-serif;
+  width: 184px;
+  height: 30px; }
   @media all and (min-width: 768px) {
     .reason-title {
       font-size: 24px;
@@ -241,12 +250,19 @@
       font-size: 20px;
       width: 212, 3px;
       height: 68px;
-      padding-left: 81,2px; } }
+      padding-left: 35.7px; } }
   @media all and (min-width: 1280px) {
     .reason-description {
       font-size: 20px;
       width: 353, 8px;
       height: 68px; } }
+
+.reasons-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; }
 
 .reasons-button {
   background-color: #f26002;
@@ -284,13 +300,7 @@
     .footer {
       display: flex;
       flex-direction: row-reverse;
-      position: relative;
-      height: 170px;
-      align-items: initial; } }
-  @media all and (min-width: 1200px) {
-    .footer {
-      width: 100%;
-      height: 161px; } }
+      height: 240px; } }
   .footer .interesting {
     text-align: center;
     color: #ffffff;
@@ -303,11 +313,14 @@
     text-transform: uppercase; }
     @media all and (min-width: 768px) {
       .footer .interesting {
-        text-align: right;
+        text-align: left;
         line-height: 30px;
-        position: absolute;
+        flex-direction: row-reverse;
+        position: relative;
         right: 50px;
-        top: 24px; } }
+        top: 24px;
+        height: 150px;
+        width: 210px; } }
     @media all and (min-width: 1200) {
       .footer .interesting {
         position: absolute;
@@ -317,7 +330,6 @@
     text-align: center;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
     font-size: 14px;
     margin: 0px;
     left: 124px;
@@ -327,15 +339,22 @@
     text-transform: uppercase; }
     @media all and (min-width: 768px) {
       .footer .social-media {
-        text-align: right;
+        text-align: left;
         position: relative;
-        right: 50px;
         top: 24px; } }
     @media all and (min-width: 1200) {
       .footer .social-media {
-        position: absolute;
         bottom: 15px;
         right: 138px; } }
+  .footer .links {
+    padding-top: 45px;
+    flex-direction: row; }
+    @media all and (min-width: 768px) {
+      .footer .links {
+        display: flex; } }
+    @media all and (min-width: 1200) {
+      .footer .links {
+        display: flex; } }
   .footer .li-bullets {
     list-style: none;
     text-transform: uppercase; }
@@ -356,7 +375,6 @@
   @media all and (min-width: 768px) {
     .footer-copyright {
       text-align: left;
-      position: relative;
       left: 39px;
       bottom: 165px;
       top: 45px;
@@ -379,9 +397,8 @@
   margin: 0; }
   @media all and (min-width: 768px) {
     .footer-love {
-      text-align: left;
-      position: relative;
-      left: 39px;
+      text-align: right;
+      padding-left: 65px;
       top: 68px;
       bottom: 142px; } }
   @media all and (min-width: 1200) {
@@ -407,5 +424,29 @@
     transition: transform ease 7s, background-color ease 1s;
     background-color: #8ccbea;
     transform: translate(0vw, -50vh); }
+  @media all and (min-width: 768px) {
+    .ico-arrow {
+      text-align: left;
+      position: relative;
+      left: 39px;
+      top: 68px;
+      bottom: 142px; } }
+  @media all and (min-width: 1200) {
+    .ico-arrow {
+      text-align: left;
+      position: absolute;
+      top: 75px;
+      bottom: 135px;
+      left: 370px; } }
+
+.footer_button-container {
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  padding-bottom: 410px; }
+  @media all and (min-width: 768px) {
+    .footer_button-container {
+      padding-bottom: 290px;
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
