@@ -1,0 +1,18 @@
+.new-section {
+  background-color: $footer__background--color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.text {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
