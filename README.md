@@ -1,4 +1,4 @@
-# Final evaluation 1
+# Anonymous Proxy
 
 Final evaluation of module 1 in Adalab. <br>
 It is a Web App developed with HTML and SCSS, based on the structure of the Adalab Web Starter Kit. <br>
