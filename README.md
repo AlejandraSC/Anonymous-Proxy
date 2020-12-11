@@ -1,10 +1,11 @@
-<strong> Evaluación final </strong> <br>
+<strong> Final evaluation </strong> <br>
 
-Evaluación final del módulo 1 en Adalab. <br>
-Consiste en una Web App realizada con HTML y SCSS, partiendo de la estructura del Adalab Web Starter Kit.
+
+Final evaluation of module 1 in Adalab. <br>
+It's a Web App developed with HTML and SCSS, based on the structure of the Adalab Web Starter Kit. <br>
 
 <ul>
-<li>Cómo instalar: npm install</li>
-<li>Cómo arrancar el proyecto: npm start</li>
-<li>Cómo publicar el proyecto: npm run docs</li>
+<li>How to install: npm install</li>
+<li>How to start the project: npm start</li>
+<li>How to publish the project: npm run docs</li>
 </ul>
