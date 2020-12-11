@@ -2,7 +2,7 @@
 
 
 Final evaluation of module 1 in Adalab. <br>
-It's a Web App developed with HTML and SCSS, based on the structure of the Adalab Web Starter Kit. <br>
+It is a Web App developed with HTML and SCSS, based on the structure of the Adalab Web Starter Kit. <br>
 
 <ul>
 <li>How to install: npm install</li>
